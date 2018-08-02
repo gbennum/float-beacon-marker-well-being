@@ -156,7 +156,7 @@ class App extends Component {
                   but these diseases are also very common. Please click on the disease that you do have." />
             <div className="question-container">
               <div className="individual-question-container answer-container">
-                <PersonIcon />
+                <PersonIcon diasble={this.state.correctDisease != null }/>
                 {sortedSymptoms[this.state.chosenSymptomId].diagnoses.map((item, index) => {
                   return (
                     <div className={"answer " + (this.state.correctDisease != null ? "disabled" : "")}
