@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux";
-import { getSymptoms, updateFrequency } from '../../actions/index';
+import { getSymptoms, updateFrequency, getDiagnoses } from '../../actions/index';
 import { PersonIcon, AppHeader, QuestionContainer } from './SmallComponents';
 import './style.css';
 
@@ -17,6 +17,7 @@ class App extends Component {
 
   componentDidMount() {
     this.props.dispatch(getSymptoms());
+    this.props.dispatch(getDiagnoses());
     this.scrollToBottom();
   }
 
