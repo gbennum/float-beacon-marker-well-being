@@ -18,8 +18,8 @@ If you're not, this may be unpleasant- you might consider just installing homebr
 [https://postgresapp.com/documentation/cli-tools.html](https://postgresapp.com/documentation/cli-tools.html)
 
 Finally, 
-`npm seed`
-`npm start`
+`npm run seed`
+`npm run start`
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
@@ -38,7 +38,6 @@ To run API tests, have a server running, then run:
 	<br>
 	<dd>Good and bad API calls</dd>
 	<dd>Good and bad inputs</dd>
-	<dd>Good and bad API calls</dd>
 	<dd>Check the data for some basic quality metrics</dd>
 	<dd>Make sure all fields are being returned</dd>
 	<dd>Ensure the fields are not null and populated with data</dd>
