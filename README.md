@@ -18,8 +18,8 @@ If you're not, this may be unpleasant- you might consider just installing homebr
 [https://postgresapp.com/documentation/cli-tools.html](https://postgresapp.com/documentation/cli-tools.html)
 
 Finally, 
-`npm seed`
-`npm start`
+`npm run seed`
+`npm run start`
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
