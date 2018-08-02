@@ -29,9 +29,19 @@ You will also see any lint errors in the console.
 
 ## Other Commands
 
+To run API tests, have a server running, then run:
+
 `npm test`
 
-Launches the test runner in the interactive watch mode.<br>
+These tests are supposed to handle:
+	Good and bad inputs
+	Good and bad API calls
+	Check the data for some basic quality metrics
+	Make sure all fields are being returned
+	Ensure the fields are not null and populated with data
+	Determine whether the correct incrementation actions are occurring on the server 
+
+<br>
 
 `npm run build`
 
@@ -44,5 +54,5 @@ The app is ready to be deployed!
 
 ## API Documentation
 
-This is a lightweight API, not all of the general CRUD operations were requested for this project.  Sample requests in a variety of languages and lightweight documentation courtesy of [Postman](https://documenter.getpostman.com/view/5002799/RWTfy1MJ).
+This is a lightweight API, not all of the general CRUD operations were requested for this project.  Sample requests in a variety of languages and documentation courtesy of [Postman](https://documenter.getpostman.com/view/5002799/RWTfy1MJ).
 

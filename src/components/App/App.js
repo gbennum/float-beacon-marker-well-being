@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux";
-import { getSymptoms, updateFrequency, getDiagnoses } from '../../actions/index';
+import { getSymptoms, updateFrequency } from '../../actions/index';
 import { PersonIcon, AppHeader, QuestionContainer } from './SmallComponents';
 import './style.css';
 
@@ -17,13 +17,11 @@ class App extends Component {
 
   componentDidMount() {
     this.props.dispatch(getSymptoms());
-    this.props.dispatch(getDiagnoses());
     this.scrollToBottom();
   }
 
   componentDidUpdate() {
     this.scrollToBottom();
-    // this.props.dispatch(getDiagnoses());
   }
 
   scrollToBottom = () => {
@@ -41,6 +39,7 @@ class App extends Component {
   toggleSymptom = (event) => {
     if (this.state.chosenSymptomId == null) {
       var id = event.target.id;
+      // eslint-disable-next-line
       this.setState({ ['chosenSymptomId']: id });
     }
   };
@@ -175,8 +174,8 @@ class App extends Component {
         {this.state.correctDisease != null &&
           <div>
             <QuestionContainer text="Great, glad we figured out what you have.  That much be a relief." />
-            <QuestionContainer text={"There " + (diagnoses[0].frequency == 1 ? "has" : "have") + " been " + 
-                                  diagnoses[0].frequency + " case" + (diagnoses[0].frequency == 1 ? "" : "s") + 
+            <QuestionContainer text={"There " + (diagnoses[0].frequency === 1 ? "has" : "have") + " been " + 
+                                  diagnoses[0].frequency + " case" + (diagnoses[0].frequency === 1 ? "" : "s") + 
                                   " of " + diagnoses[0].name + " since this server was reset."}/>
             <div className="question-container">
               <div className="individual-question-container answer-container">
