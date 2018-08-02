@@ -33,14 +33,14 @@ To run API tests, have a server running, then run:
 
 `npm test`
 
-These tests are supposed to handle:<br>
-	-Good and bad API calls<br>
-	-Good and bad inputs<br>
-	-Good and bad API calls<br>
-	-Check the data for some basic quality metrics<br>
-	-Make sure all fields are being returned<br>
-	-Ensure the fields are not null and populated with data<br>
-	-Determine whether the correct incrementation actions are occurring on the server 
+<dt>These tests are supposed to handle:</dt>
+	<dd>Good and bad API calls</dd>
+	<dd>Good and bad inputs</dd>
+	<dd>Good and bad API calls</dd>
+	<dd>Check the data for some basic quality metrics</dd>
+	<dd>Make sure all fields are being returned</dd>
+	<dd>Ensure the fields are not null and populated with data</dd>
+	<dd>Determine whether the correct incrementation actions are occurring on the server</dd>
 
 <br>
 
