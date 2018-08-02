@@ -6,20 +6,20 @@ Additonally, a full stack with PostgreSQL, Sequelize, and Express was added usin
 
 In the project directory, run:
 
-### `npm install`
+`npm install`
 
 Assuming you have some sort of postgreSQL server installed: 
-### `createdb float-beacon-marker-well-being`
+`createdb float-beacon-marker-well-being`
 
 If you don't, hopefully you're managing packages with homebrew:
-### `brew install postgresql`
+`brew install postgresql`
 
 If you're not, this may be unpleasant- you might consider just installing homebrew:
 [https://postgresapp.com/documentation/cli-tools.html](https://postgresapp.com/documentation/cli-tools.html)
 
 Finally, 
-### `npm seed`
-### `npm start`
+`npm run seed`
+`npm run start`
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
@@ -29,11 +29,24 @@ You will also see any lint errors in the console.
 
 ## Other Commands
 
-### `npm test`
+To run API tests, have a server running, then run:
 
-Launches the test runner in the interactive watch mode.<br>
+`npm test`
 
-### `npm run build`
+<dl>
+	<dt>These tests are supposed to handle:</dt>
+	<br>
+	<dd>Good and bad API calls</dd>
+	<dd>Good and bad inputs</dd>
+	<dd>Check the data for some basic quality metrics</dd>
+	<dd>Make sure all fields are being returned</dd>
+	<dd>Ensure the fields are not null and populated with data</dd>
+	<dd>Determine whether the correct incrementation actions are occurring on the server</dd>
+</dl>
+
+<br>
+
+`npm run build`
 
 Builds the app for production to the `build` folder.<br>
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -44,5 +57,5 @@ The app is ready to be deployed!
 
 ## API Documentation
 
-This is a lightweight API, not all of the general CRUD operations were requested for this project.  Sample requests in a variety of languages and lightweight documentation courtesy of [Postman](https://documenter.getpostman.com/view/5002799/RWTfy1MJ).
+This is a lightweight API, not all of the general CRUD operations were requested for this project.  Sample requests in a variety of languages and documentation courtesy of [Postman](https://documenter.getpostman.com/view/5002799/RWTfy1MJ).
 

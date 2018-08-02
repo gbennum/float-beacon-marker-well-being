@@ -1,0 +1,180 @@
+app-container {
+  display: inline-block;
+  position: relative;
+}
+
+.reset-button {
+  position: absolute;
+  left: 35px;
+  top: 10px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 8px 8px 8px 0px;
+  padding: 0.667rem 0.889rem 0.6rem;
+  color: rgb(255, 255, 255);
+  background-color: rgb(69, 195, 243);
+  cursor: pointer;
+}
+
+.app-header {
+  padding-left: 1.11rem;
+  padding-right: 1.11rem;
+  z-index: 99;
+  width: 100%;
+  background-color: rgb(0, 173, 239);
+  height: calc(33vh - 2.5rem);
+  overflow: hidden;
+}
+
+.app-header-text-container {
+  width: 100%;
+  max-width: 640px;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  margin: 0px auto;
+}
+
+.app-header-text {
+  font-family: roboto, Arial, san-serif;
+  font-weight: 300;
+  letter-spacing: 0.02rem;
+  line-height: 1.3;
+  font-size: 1.878rem;
+  display: block;
+  color: white;
+  width: 100%;
+  max-width: 640px;
+  margin: 0px 1.11rem 4vh;
+}
+
+.error-text {
+  font-family: roboto, Arial, san-serif;
+  font-weight: 300;
+  letter-spacing: 0.02rem;
+  line-height: 1.3;
+  font-size: 1.878rem;
+  display: block;
+  color: black;
+  width: 100%;
+  text-align: center;
+  margin: 4vh auto;
+}
+
+.question-container {
+  display: inline-flex;
+  margin: 0 auto;
+  width: 100%
+}
+
+.individual-question-container {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 35.5556rem;
+  padding-top: 3rem;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.question {
+  position: relative;
+  -webkit-box-align: center;
+  align-items: center;
+  max-width: 25.3333rem;
+  -webkit-box-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: 0.889rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(223, 223, 223);
+  border-image: initial;
+  padding: 0.667rem 0.889rem 0.6rem;
+  border-radius: 8px 8px 8px 0px;
+  background: white;
+  font-family: roboto, Arial, san-serif;
+  letter-spacing: 0.01rem;
+  line-height: 1.3;
+  color: rgb(80, 80, 80);
+  font-weight: 300;
+  font-size: 0.878rem;
+}
+
+.question::before {
+  position: absolute;
+  top: -0.889rem;
+  left: -0.889rem;;
+  height: 30px;
+  width: 30px;
+  content: '';
+  background-image: url("https://www.buoyhealth.com/static/images/buoy-chat-icon.svg");
+}
+
+.individual-question-container.answer-container .answer {
+  
+}
+
+.person-icon-positioning {
+  transition: all .5s ease 0s;
+  position: absolute;
+  top: 0.889rem;
+  right: 0.889rem;;
+  height: 30px;
+  width: 30px;
+  content: '';
+}
+
+.person-icon-positioning.disabled {
+  top: 2.667rem;
+}
+
+.answer {
+  transition: all .5s ease 0s;
+  float: right;
+  display: inline-block;
+  background-color: rgb(0, 173, 239);
+  cursor: pointer;
+  font-family: roboto, Arial, san-serif;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  line-height: 1.3;
+  font-size: 0.878rem;
+  letter-spacing: 0.02rem;
+  margin-top: 0.223rem;
+  margin-right: 0.223rem;
+  margin-bottom: 0.223rem;
+  margin-left: 0.223rem;
+  padding: 0.445rem 0.889rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(0, 173, 239);
+  border-image: initial;
+  border-radius: 4px;
+  outline: none;
+}
+
+.answer:hover {
+  background-color: rgb(69, 195, 243);
+  color: rgb(255, 255, 255);
+  border-color: rgb(69, 195, 243);
+}
+
+.answer.disabled {
+  border-color: rgb(223, 223, 223);
+  border-image: initial;
+  padding: 0.667rem 0.889rem 0.6rem;
+  border-radius: 8px 8px 0px;
+  background: white;
+  color: rgb(0, 173, 239);
+  cursor: auto;
+}
+
+.blank-padding {
+  width: 100%;
+  height: 10rem;
+}
+
+
