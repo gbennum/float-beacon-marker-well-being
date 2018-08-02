@@ -38,7 +38,6 @@ To run API tests, have a server running, then run:
 	<br>
 	<dd>Good and bad API calls</dd>
 	<dd>Good and bad inputs</dd>
-	<dd>Good and bad API calls</dd>
 	<dd>Check the data for some basic quality metrics</dd>
 	<dd>Make sure all fields are being returned</dd>
 	<dd>Ensure the fields are not null and populated with data</dd>
