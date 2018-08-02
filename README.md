@@ -35,6 +35,7 @@ To run API tests, have a server running, then run:
 
 <dl>
 	<dt>These tests are supposed to handle:</dt>
+	<br>
 	<dd>Good and bad API calls</dd>
 	<dd>Good and bad inputs</dd>
 	<dd>Good and bad API calls</dd>
